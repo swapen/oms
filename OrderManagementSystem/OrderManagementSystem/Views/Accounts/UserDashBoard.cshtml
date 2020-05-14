@@ -1,0 +1,19 @@
+﻿
+
+@using Microsoft.AspNetCore.Http;
+
+<body>
+
+    <h3>Success Page</h3>
+    Welcome @Context.Session.GetString("FirstName")
+    <br>
+    <a asp-controller="users" asp-action="logout">Logout</a>
+    <br>
+    <br>
+
+    <a asp-controller="users" asp-action="RetrieveProducts">Shop Products</a>
+
+
+
+
+</body>

@@ -1,0 +1,15 @@
+﻿@model Users
+
+<h2>Update User Information</h2>
+
+<form asp-controller="users" asp-action="updateuser">
+    First Name: <input type="text" name="FirstName" id="FirstName" asp-for="FirstName" /> <br />
+    Last Name: <input type="text" name="LastName" id="LastName" asp-for="LastName" /> <br />
+    Email ID: <input type="text" name="EmailID" id="EmailID" asp-for="EmailID" /> <br />
+    Password: <input type="text" name="Pword" id="Pword" asp-for="Pword" /> <br />
+    Confirm Password: <input type="text" name="ConfirmPassword" id="ConfirmPassword" asp-for="ConfirmPassword" /> <br />
+
+    <input type="hidden" name="userid" id="userid" asp-for="UserId" />
+    <button type="submit">Submit</button>
+
+</form>

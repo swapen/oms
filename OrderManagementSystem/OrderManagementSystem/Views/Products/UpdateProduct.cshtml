@@ -1,0 +1,17 @@
+﻿@model Products
+
+<h2>Update Product Information</h2>
+
+<form asp-controller="products" asp-action="UpdateProduct">
+    Product Name: <input type="text" name="ProductName" id="ProductName" asp-for="ProductName" /> <br />
+    Category: <input type="text" name="Category" id="Category" asp-for="Category" /> <br />
+    Supplier: <input type="text" name="Supplier" id="Supplier" asp-for="Supplier" /> <br />
+    Product Description: <input type="text" name="ProductDescription" id="ProductDescription" asp-for="ProductDescription" /> <br />
+    Available Units: <input type="text" name="AvailableUnits" id="AvailableUnits" asp-for="AvailableUnits" /> <br />
+    Price: <input type="text" name="Price" id="Price" asp-for="Price" /> <br />
+    ImageData: <input type="text" name="ImageData" id="ImageData" asp-for="ImageData" /> <br />
+
+    <input type="hidden" name="productid" id="productid" asp-for="ProductID" />
+    <button type="submit">Submit</button>
+
+</form>

@@ -1,0 +1,54 @@
+﻿<Properties StartupConfiguration="{3142FE7E-BDBA-45D8-A521-4D74CF6DBED8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OrderManagementSystem/Controllers/OrderController.cs">
+    <Files>
+      <File FileName="OrderManagementSystem/Controllers/OrderController.cs" Line="112" Column="12" />
+      <File FileName="OrderManagementSystem/Controllers/UsersController.cs" Line="83" Column="2" />
+      <File FileName="OrderManagementSystem/Controllers/ProductsController.cs" Line="115" Column="1" />
+      <File FileName="OrderManagementSystem/Models/OrderManagementContext.cs" Line="16" Column="1" />
+      <File FileName="OrderManagementSystem/Views/Users/Index.cshtml" Line="24" Column="29" />
+      <File FileName="OrderManagementSystem/Views/Users/UpdateUser.cshtml" Line="15" Column="8" />
+      <File FileName="OrderManagementSystem/Views/Products/Index.cshtml" Line="22" Column="13" />
+      <File FileName="OrderManagementSystem/Models/Products.cs" Line="18" Column="32" />
+      <File FileName="OrderManagementSystem/Views/Products/UpdateProduct.cshtml" Line="17" Column="8" />
+      <File FileName="OrderManagementSystem/Startup.cs" Line="34" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OrderManagementSystem" expanded="True">
+            <Node name="OrderManagementSystem" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="OrderController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Accounts" expanded="True" />
+                <Node name="Cart" expanded="True" />
+                <Node name="Order" expanded="True" />
+                <Node name="Products" expanded="True" />
+                <Node name="Shared" expanded="True" />
+                <Node name="Users" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/swathisai/repo/OrderManagementSystem/OrderManagementSystem/Controllers/OrderController.cs" relfile="OrderManagementSystem/Controllers/OrderController.cs" line="35" column="1" />
+      <Breakpoint file="/Users/swathisai/repo/OrderManagementSystem/OrderManagementSystem/Controllers/ProductsController.cs" relfile="OrderManagementSystem/Controllers/ProductsController.cs" line="96" column="1" />
+      <Breakpoint file="/Users/swathisai/repo/OrderManagementSystem/OrderManagementSystem/Controllers/ProductsController.cs" relfile="OrderManagementSystem/Controllers/ProductsController.cs" line="111" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.OrderManagementSystem PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

@@ -1,0 +1,38 @@
+﻿@model Users
+
+
+    <form asp-controller="users" asp-action="RegisterUser" method="post" class="register-form">
+
+
+        First Name:<br />
+        <div class="form-group">
+            <input type="text" name="FirstName" id="ProductName" asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        Last Name:<br />
+        <div class="form-group">
+            <input type="text" name="LastName" id="LastName" asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        Email ID:<br />
+        <div class="form-group">
+            <input type="text" name="EmailID" id="ProductName" asp-for="EmailID" class="form-control" />
+            <span asp-validation-for="EmailID" class="text-danger"></span>
+        </div>
+
+        Password:<br />
+        <div class="form-group">
+            <input type="text" name="Pword" id="ProductName" asp-for="Pword" class="form-control" />
+            <span asp-validation-for="Pword" class="text-danger"></span>
+        </div>
+
+        Confirm Password:<br />
+        <div class="form-group">
+            <input type="text" name="ConfirmPassword" id="ConfirmPassword" asp-for="ConfirmPassword" class="form-control" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>

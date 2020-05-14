@@ -1,0 +1,22 @@
+﻿@model List<Products>
+
+<h4>Welcome to Products Page!</h4> <br\> </br\>
+
+
+<div class="card-deck">
+    @foreach (var product in Model)
+    {
+        var photoPath = "~/Images/" + product.ImageData;
+        
+        <div class="card m-3" style="min-width: 18rem; max-width:30.5%;" >
+            <img class="card-img-top" height="200px" width="auto" src="@photoPath" alt="Card image" asp-append-version="true" />
+            <div class="card-footer text-center">
+                <h2 class="card-title">@product.ProductName.</h2>
+                <a asp-controller="products" asp-action="viewproduct" asp-route-id="@product.ProductID" class="btn btn-primary">View Product</a>
+            </div>
+        </div>
+    }
+
+</div>
+
+

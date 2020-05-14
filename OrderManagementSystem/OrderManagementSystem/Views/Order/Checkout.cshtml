@@ -1,0 +1,66 @@
+﻿@model OrderViewModel
+
+    <form asp-controller="order" asp-action="checkout" method="post" class="register-form">
+        <br />
+
+        <div class="text-danger">
+            @ViewBag.FailedToRegister
+        </div>
+
+        First Name:<br />
+        <div class="form-group">
+            <input type="text" name="FirstName" id="FirstName" asp-for="FirstName" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        Last Name:<br />
+        <div class="form-group">
+            <input type="text" name="LastName" id="LastName" asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        Address Line1:<br />
+        <div class="form-group">
+            <input type="text" name="AddressLine1" id="AddressLine1" asp-for="AddressLine1" class="form-control" />
+            <span asp-validation-for="AddressLine1" class="text-danger"></span>
+        </div>
+
+        Address Line2:<br />
+        <div class="form-group">
+            <input type="text" name="AddressLine2" id="AddressLine2" asp-for="AddressLine2" class="form-control" />
+            <span asp-validation-for="AddressLine2" class="text-danger"></span>
+        </div>
+
+        ZipCode:<br />
+        <div class="form-group">
+            <input type="text" name="ZipCode" id="ZipCode" asp-for="ZipCode" class="form-control" />
+            <span asp-validation-for="ZipCode" class="text-danger"></span>
+        </div>
+
+        State:<br />
+        <div class="form-group">
+            <input type="text" name="State" id="State" asp-for="State" class="form-control" />
+            <span asp-validation-for="State" class="text-danger"></span>
+        </div>
+
+        Country:<br />
+        <div class="form-group">
+            <input type="text" name="Country" id="Country" asp-for="Country" class="form-control" />
+            <span asp-validation-for="Country" class="text-danger"></span>
+        </div>
+
+        Phone Number:<br />
+        <div class="form-group">
+            <input type="text" name="PhoneNumber" id="PhoneNumber" asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+        Email:<br />
+        <div class="form-group">
+            <input type="text" name="Email" id="Email" asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+
+        <button type="submit">Register</button>
+    </form>

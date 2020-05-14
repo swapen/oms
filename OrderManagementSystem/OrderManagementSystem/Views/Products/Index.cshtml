@@ -1,0 +1,37 @@
+﻿@model List<Products>
+
+<h2>List of Products</h2> <br\> </br\>
+<a asp-controller="products" asp-action="UploadProduct">Add New Product</a>
+
+
+<table class="table table-bordered">
+    <tr>
+        <td>Product ID</td>
+        <td>Product Name</td>
+        <td>Category</td>
+        <td>Supplier</td>
+        <td>Product Description</td>
+        <td>Available Units</td>
+        <td>Price</td>
+        <td>ImageData</td>
+
+    </tr>
+
+    @foreach (Products products in Model)
+    {
+        <tr>
+            <td>@products.ProductID</td>
+            <td>@products.ProductName</td>
+            <td>@products.Category</td>
+            <td>@products.Supplier</td>
+            <td>@products.ProductDescription</td>
+            <td>@products.AvailableUnits</td>
+            <td>@products.Price</td>
+            <td>@products.ImageData</td>
+            <td><a asp-controller="products" asp-action="UpdateProduct" asp-route-id="@products.ProductID"> EDIT</a></td>
+            <td><a asp-controller="products" asp-action="RemoveProduct" asp-route-id="@products.ProductID"> REMOVE</a></td>
+
+        </tr>
+    }
+
+</table>

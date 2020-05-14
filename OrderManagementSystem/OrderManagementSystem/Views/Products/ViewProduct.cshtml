@@ -1,0 +1,35 @@
+﻿@model Products
+
+
+@{
+    var photoPath = "~/Images/" + @Model.ImageData;
+}
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.ProductName</h1>
+            </div>
+
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@photoPath" alt="Card image" asp-append-version="true" />
+                <h3>Product Supplier: @Model.Supplier</h3>
+                <h3>Product Description: @Model.ProductDescription</h3>
+                <h3>Quantity: @Model.AvailableUnits</h3>
+                <h3>Price: $@Model.Price</h3>
+                <input type="hidden" name="productid" id="productid" asp-for="ProductID" />
+                <a asp-controller="cart" asp-action="addtoshoppingcart" asp-route-id="@Model.ProductID" class="btn btn-primary">Add To Cart</a>
+                <a asp-controller="cart" asp-action="index"  class="btn btn-primary">View Cart</a>
+            </div>
+
+            <!--<div class="card-footer text-center">
+                <input type="hidden" name="productid" id="productid" asp-for="ProductID" />
+                <a asp-controller="cart" asp-action="AddToShoppingCart" asp-route-id="Model.ProductID" class="btn btn-primary">Add To Cart</a>
+            </div>-->
+        </div>
+    </div>
+</div>
+    
+         
+            

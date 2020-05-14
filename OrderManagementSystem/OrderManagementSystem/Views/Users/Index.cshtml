@@ -1,0 +1,35 @@
+﻿@model List<Users>
+
+<h2>Welcome to Users Page!</h2> <br\> </br\>
+<a asp-controller="users" asp-action="RegisterUser">New user Registration</a>
+
+
+<h2>This is Users Table</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <td>User Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Email Id</td>
+        <td>Password</td>
+        <td>Confirm Password</td>
+    </tr>
+
+    @foreach (Users users in Model)
+    {
+<tr>
+    <td>@users.UserId</td>
+    <td>@users.FirstName</td>
+    <td>@users.LastName</td>
+    <td>@users.EmailID</td>
+    <td>@users.Pword</td>
+    <td>@users.ConfirmPassword</td>
+    <td><a asp-controller="users" asp-action="UpdateUser" asp-route-id="@users.UserId"> EDIT</a></td>
+    <td><a asp-controller="users" asp-action="DeleteUser" asp-route-id="@users.UserId"> DELETE</a></td>
+
+</tr>
+    }
+
+</table>
+
